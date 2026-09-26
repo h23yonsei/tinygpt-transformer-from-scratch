@@ -1,0 +1,6 @@
+# Notebooks and tools/check_notebooks.py
+torch>=2.2
+numpy>=1.24
+nbformat>=5.9
+nbconvert>=7.0
+ipykernel>=6.0
