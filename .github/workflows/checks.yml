@@ -1,0 +1,18 @@
+name: checks
+
+# Checks the loss table in README.md against the outputs stored in every notebook, on every push.
+on:
+  push:
+  pull_request:
+
+jobs:
+  notebooks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: README losses match the notebooks
+        run: python tools/check_notebooks.py
