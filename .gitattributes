@@ -1,0 +1,10 @@
+# Normalize line endings to LF on commit, check out as OS-native
+* text=auto
+
+# Source and text data
+*.py    text
+*.md    text
+*.txt   text
+
+# Notebooks are JSON: always LF, so diffs stay readable
+*.ipynb text eol=lf

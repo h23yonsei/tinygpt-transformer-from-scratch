@@ -1,0 +1,19 @@
+# Datasets the notebooks download on first run
+names.txt
+shakespeare.txt
+
+# Output of tools/check_notebooks.py --execute
+build/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
